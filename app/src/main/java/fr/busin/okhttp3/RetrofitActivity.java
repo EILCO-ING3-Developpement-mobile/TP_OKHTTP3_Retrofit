@@ -41,9 +41,7 @@ public class RetrofitActivity extends AppCompatActivity {
         apiService.getUsers(new Callback<Users>() {
             @Override
             public void success(Users users, Response response) {
-                //Toast.makeText(RetrofitActivity.this, "It's work", Toast.LENGTH_SHORT).show();
-                //RECYCLERVIEW POUR AFFICHER LES USERS
-                //AU CLIC SUR ITEM, NEW ACTIVITY POUR AFFICHER
+
                 Intent intent = new Intent(RetrofitActivity.this, VoitureActivity.class);
                 setView(users,intent);
 

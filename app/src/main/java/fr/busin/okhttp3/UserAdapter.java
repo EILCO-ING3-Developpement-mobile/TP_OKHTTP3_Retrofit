@@ -25,7 +25,6 @@ class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
 
     private Context mContext;
     private Users mUsers;
-   // private int position ;
     private static Intent intent ;
 
 
@@ -50,7 +49,7 @@ class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
                 intent.putExtra("Cars", (ArrayList<Voiture>) mUsers.getUsers().get(viewType).getVoitures());
                 mContext.startActivity(intent);
 
-          //   Toast.makeText(mContext, "Click on view ", Toast.LENGTH_SHORT).show();
+
             }
 
         });
